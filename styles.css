@@ -1,5 +1,5 @@
 :root {
-    --accent-color: #8d26c9;
+    --accent-color: #e42084;
     --text-color: #404040;
 }
 
@@ -8,8 +8,11 @@
 .wrap {
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction:column;
+    /* display: flex;
+    flex-direction:column; */
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .gradient-background {
@@ -34,23 +37,28 @@
     background-attachment: fixed;
     background-size: 700px;
     height: 100%;
+    overflow: hidden;
 }
 
 .content {
     background-color: #d8e2e02a;
-    font-family: 'Roboto';
+    font-family: 'Radio Canada';
+    font-weight: 400;
     font-size: 18px;
     width: fit-content;
     height: fit-content;
     box-sizing: content-box;
     color: var(--text-color);
+    position: absolute;
+    top: 0; left: 0;
     padding: 30px;
     margin: 30px;
     z-index: 1;
 }
 
 h1 {
-    font-family: 'Dela Gothic One';
+    font-family: 'Radio Canada';
+    font-weight: 700;
     font-size: 40px;
     text-shadow: 1px 1px 5px #3030301f;
     text-decoration: overline;
@@ -71,6 +79,7 @@ a:link, a:visited {
 
 a:hover {
     color: var(--accent-color);
+    font-weight: initial + 100;
     text-decoration-thickness: 3px;
 }
 
