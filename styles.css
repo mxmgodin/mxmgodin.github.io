@@ -1,15 +1,19 @@
-:root {
-    //--accent-color: #e42084;
-    --accent-color: #ddb100;
-    --primary-text-color: #404040;
-    --primary-background: #fafafa;
-    --secondary-background: #d2d2d27f
-}
+:root[data-theme="light"] {
+    --text: #060703;
+    --background: #fcfdf7;
+    --primary: #afc549;
+    --secondary: #91dc8f;
+    --secondary20: rgba(145, 220, 143, 0.2);
+    --accent: #64cecb;
+  }
 
-[data-theme = "dark"] {
-    --primary-text-color: #efefef;
-    --primary-background: #404040;
-    --secondary-background: #5050507f;
+:root[data-theme="dark"] {
+    --text: #fbfcf8;
+    --background: #070802;
+    --primary: #9fb63a;
+    --secondary: #267023;
+    --secondary20: rgba(38, 112, 35, 0.2);
+    --accent: #319b98;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -56,13 +60,17 @@
     overflow: hidden;
 }
 
+.header {
+  margin: 30px
+}
+
 .content {
-    background-color: var(--secondary-background);
+    background-color: var(--secondary20);
     width: fit-content;
     height: fit-content;
     box-sizing: content-box;
-    position: absolute;
-    top: 0; left: 0;
+    /* position: absolute;
+    top: 0; left: 0; */
     padding: 30px;
     margin: 30px;
     z-index: 1;
@@ -76,43 +84,43 @@
 }
 
 body {
-    font-family: 'Radio Canada';
-    font-weight: 400;
+    font-family: 'Poppins';
+    font-weight: 300;
     font-size: 16px;
-    color: var(--primary-text-color);
-    background: var(--primary-background);
+    color: var(--text);
+    background: var(--background);
 }
 
 h1 {
-    font-family: 'Radio Canada';
+    font-family: 'Poppins';
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     text-shadow: 1px 1px 5px #3030301f;
     text-decoration: overline;
-    text-decoration-color: var(--accent-color);
+    text-decoration-color: var(--primary);
     text-decoration-thickness: 10px;
 }
 
 h2 {
-    font-family: 'Radio Canada';
+    font-family: 'Poppins';
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
     text-decoration: overline;
-    text-decoration-color: var(--accent-color);
+    text-decoration-color: var(--primary);
     text-decoration-thickness: 5px;
     margin: 10px 0px;
 }
 
 a:link, a:visited {
     color: var(--text-color);
-    text-decoration-color: var(--accent-color);
-    text-decoration-thickness: 2px;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 3px;
     text-underline-offset: 2px;
 }
 
 a:hover {
-    color: var(--accent-color);
-    text-decoration-thickness: 3px;
+    color: var(--accent);
+    text-decoration-thickness: 5px;
 }
 
 .job-description {

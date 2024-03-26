@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dela+Gothic+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="me" href="https://mastodon.social/@mxmgodin">
@@ -34,9 +33,7 @@
             }
         
             //dark theme preferred, set document with a `data-theme` attribute
-            if (theme=="dark") {
-                 document.documentElement.setAttribute("data-theme", "dark");
-            }
+            document.documentElement.setAttribute("data-theme", theme);
         }
         detectColorScheme();
     </script>
@@ -47,9 +44,12 @@
         <div class="gradient-background" />
         <div class="photo-background" />
     </div> -->
-    <div class="content">
+    
+    <div class="header">
         <h1>Maxime Godin</h1>
-        <br/>
+    </div>
+    
+    <div class="content">
         <h2>About me</h2>
         <table>
             <tr>
@@ -61,11 +61,11 @@
                 <td>Part-time baker</td>
             </tr>
         </table>
-        
-        <br/>
-        
+    </div>
+    
+    <div class="content">
+        <h2>Work Experience</h2>
         <table>
-            <tr><td colspan="2"><h2>Work Experience</h2></td></tr>
             <tr>
                 <td><b>Ubisoft Toronto</b></td>
                 <td class="date">May 2022–Present</td>
@@ -141,11 +141,12 @@
             <tr>
                 <td colspan="2">Intern Analyst-Programmer</td>
             </tr>
-
-            <tr><td><br/></td></tr>
-            
-            <tr><td colspan="2"><h2>Education</h2></td></tr>
-
+        </table>
+    </div>
+    
+    <div class="content">
+        <h2>Education</h2>
+        <table>
             <tr>
                 <td><b>Université de Sherbrooke</b></td>
                 <td class="date">2008–2011</td>
