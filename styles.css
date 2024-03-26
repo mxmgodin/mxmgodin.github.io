@@ -3,7 +3,7 @@
     --background: #fcfdf7;
     --primary: #afc549;
     --secondary: #91dc8f;
-    --secondary20: rgba(145, 220, 143, 0.2);
+    --secondary20: rgba(145, 220, 143, 0.1);
     --accent: #64cecb;
   }
 
@@ -81,6 +81,12 @@
 .date {
     font-weight: 300;
     text-align: right;
+    vertical-align: text-top;
+    opacity: 0.6;
+}
+
+td {
+  /* padding-right: 10px; */
 }
 
 body {
@@ -94,8 +100,7 @@ body {
 h1 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 40px;
-    text-shadow: 1px 1px 5px #3030301f;
+    font-size: 48px;
     text-decoration: overline;
     text-decoration-color: var(--primary);
     text-decoration-thickness: 10px;
@@ -108,7 +113,20 @@ h2 {
     text-decoration: overline;
     text-decoration-color: var(--primary);
     text-decoration-thickness: 5px;
-    margin: 10px 0px;
+    margin-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--primary)
+}
+
+h4 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
 }
 
 a:link, a:visited {
